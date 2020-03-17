@@ -55,6 +55,8 @@ let city = 'Noblesville';
 let state = 'IN';
 let zipcode = 46818;
 
+console.log(`${firstName} ${lastName}, ${houseNumber} ${street}`);
+
 console.log(firstName + ' ' + lastName);
 console.log(houseNumber + ' ' + street);
 if (aptNumber !='') {console.log('Apt' + ' ' + aptNumber);}
