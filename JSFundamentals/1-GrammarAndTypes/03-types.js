@@ -85,3 +85,4 @@ let firstArray = ['Spanish', 'English', 'Dutch', 'French'];
 
 console.log(typeof firstArray);
 console.log(firstArray[0]);
+
