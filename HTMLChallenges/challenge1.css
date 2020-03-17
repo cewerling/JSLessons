@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: green;
+}
+
+h3{
+    color: blue;
+}
+
+p{
+    color: red;
+}
+
+.div1{
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: grey;
+    position: center;
+}
+
+.div2{
+    border: 10px solid black;
+    border-radius: 2px;
+    height: 200px;
+    width: 100px;
+    background-color: lightgrey;
+    text-align: center;
+    
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Movies!</h2>
+    <p>
+        <table>
+            <thead>
+                <tr class="header">
+                    <th>Movie Title</th>
+                    <th>Year</th>
+                    <th>Runtime</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row">
+                    <td class="title"> Movie1</td>
+                    <td>1990</td>
+                    <td>2:00</td>
+                    <td>1</td>
+                </tr>
+                <tr class="row">
+                    <td class="title"> Movie2</td>
+                    <td>1998</td>
+                    <td>2:20</td>
+                    <td>2</td>
+                </tr>
+                <tr class="row">
+                    <td class="title">Movie3</td>
+                    <td>1999</td>
+                    <td>2:30</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+       </table>
+    </p>
+</body>
+</html>
+
+<style>
+    h2{
+       text-align: center; 
+    }
+    
+    table{
+        background-color: lightskyblue;
+        border-color: black;
+        border-style: solid;
+        margin: 0 auto;
+    }
+
+    /* I used this */
+    /* .title{ */
+        /* font-style: italic; */
+    /* } */
+
+    /* Adam used this */
+    tr td:first-child {
+        font-style: italic;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 15px
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+</style>
