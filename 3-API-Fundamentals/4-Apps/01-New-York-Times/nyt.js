@@ -142,7 +142,21 @@ function displayError() {
     while(section.firstChild) {
         section.removeChild(section.firstChild);
     }
-    let errorMsg = document.createElement('h3');
-    errorMsg.textContent = 'You are going TOO FAST.  PLEASE SLOW DOWN!  NYT doesn\'t like you anymore!  Wait 1 minute, then try searching again.'
+    while(results.firstChild) {
+        results.removeChild(results.firstChild);
+    }
+
+    let errorMsg = document.createElement('h2');
+    errorMsg.textContent = 'You are going TOO FAST.'
     results.appendChild(errorMsg);
+    errorMsg = document.createElement('h2');
+    errorMsg.textContent = 'PLEASE SLOW DOWN!'
+    results.appendChild(errorMsg);
+    errorMsg = document.createElement('h2');
+    errorMsg.textContent = 'NYT doesn\'t seem to like you anymore!'
+    results.appendChild(errorMsg);
+    errorMsg = document.createElement('h2');
+    errorMsg.textContent = 'Wait 1 minute, then try searching again. Maybe they\'ll like you again.'
+    results.appendChild(errorMsg);
+    errorMsg = document.createElement('h2');
 }
