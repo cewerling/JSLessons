@@ -1,0 +1,245 @@
+<!doctype html> <!-- Bootstrap says they require this as need HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+<!-- <body> -->
+
+    <!-- Navbar-->
+    <!-- <nav class="navbar navbar-expand-sm navbar-light bg-light"> added sticky-top below-->
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+          <span class="w-100 d-sm-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+          <!-- <a class="navbar-brand d-none d-sm-inline-block" href="#">  Chris Werling went away with small screen size -->
+          <a class="navbar-brand d-sm-inline-block" href="#">
+              Chris Werling
+          </a>
+          <!-- <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+              <img src="//placehold.it/40?text=LOGO" alt="logo">
+          </a> -->
+          <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </div>
+      <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item">
+                  <a href="#" class="nav-link m-2 menu-item nav-active">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link m-2 menu-item">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link m-2 menu-item">Contact Chris</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  
+
+    <!-- OLD navbar 2020-03-30 -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+      <!-- <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Chris Werling</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Chris</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+
+    <!-- TOP PAGE CODE mainly from Minimalistic Intro: https://mdbootstrap.com/docs/jquery/sections/intros/ 
+    Was using the code from https://mdbootstrap.com/docs/jquery/css/background-image/ but didn't seem to be working, but this code does little more, as...
+    The wow animations don't seem to be working, and couldn't find out why after doing Google searches -->
+    <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://www.chriswerling.com/wp-content/uploads/2016/12/Manhattan-1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 white-text text-center">
+              <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+                data-wow-delay="0.3s"><strong>Chris Werling</strong></h1>
+              <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+              <div class="qualities">
+                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Management Consultant</strong></h5>
+                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Entrepreneur</strong></h5>
+                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Speaker</strong></h5>
+                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Writer</strong></h5>
+                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Software Developer</strong></h5>
+              </div>
+              <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About Me</a>
+              <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Projects</a>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+  
+
+
+
+  </head>
+
+    
+  <!-- </header> -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+
+
+    <!-- About Me Content -->
+
+
+    <div class="aboutMeSectionHeader">
+      <!-- Place About Me Header here -->
+      <h2>About Me</h2>
+    </div>
+
+    <!-- Cards themselves mainly from Nihar Bheemanathi https://colorlib.com/wp/bootstrap-cards/ & https://codepen.io/nbheemanathi/pen/rwQZVQ -->
+
+    <div class="container mt-2">
+      <!--   <div class="card card-block mb-2">
+          <h4 class="card-title">Card 1</h4>
+          <p class="card-text">Welcom to bootstrap card styles</p>
+          <a href="#" class="btn btn-primary">Submit</a>
+        </div>   -->
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="card card-block">
+            <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
+          <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+              <h5 class="card-title mt-3 mb-3">Entrepreneur</h5>
+              <p class="card-text">Founded 3 Businesses & Non-Profit -<br>Cybersecurity, Supply Chain, Mgmt Consulting</p>
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card card-block">
+            <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
+          <img src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">Speaker/Writer</h5>
+              <p class="card-text">Wide Variety of Topics</p> 
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card card-block">
+            <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
+          <img src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">Software Developer</h5>
+              <p class="card-text">Modern-Day Web Apps</p> 
+        </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Old ABout Me Content Section Holder -->
+    <!-- <div class="row">
+        <div class="col-md-12 col-lg-4">
+            <p>Column 1</p>
+        </div>
+        <div class="col-md-12 col-lg-4">
+            <p>Column2</p>
+        </div>
+        <div class="col-md-12 col-lg-4">
+            <p>Column 3</p>
+        </div>
+    </div> -->
+
+
+
+
+    <!-- Web App Software Developoment Projects -->
+
+
+
+
+
+    <!-- Contact Me -->
+
+    <form
+        action="https://formspree.io/mlelzzey"
+        method="POST"
+        >
+        <label>
+            Your Name:
+            <input type="text" name="name">
+        </label>
+        <label>
+            Your Email:
+            <input type="email" name="_replyto">
+        </label>
+        <label>
+            What Can I Do For You?
+            <textarea name="message"></textarea>
+        </label>
+        <input type="submit" value="Send">
+    </form>
+
+
+
+
+    <!-- Footer -->
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
