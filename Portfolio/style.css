@@ -1,6 +1,8 @@
-/* body {
-    background-color: #fff;
-} */
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 
 /* Top Page code mainly from Third Option, Minimalistic Intro: https://mdbootstrap.com/docs/jquery/css/background-image/ */
 /* Same code as on second try of HTML: https://mdbootstrap.com/docs/jquery/sections/intros/ */
@@ -9,6 +11,10 @@ body,
 header,
 .view {
   height: 100%;
+}
+
+.navbar {
+    border-bottom: 0.5px solid lightgray;
 }
 
 @media (max-width: 740px) {
@@ -79,6 +85,16 @@ header,
     font-weight: 900;
 }
 
+.chevronDownArrow img {
+    /* position: absolute; */
+    /* top: 650px;
+    left: 600px; */
+    filter: invert(100%);
+    width: 5%;
+    height: auto;
+    padding-top: 30%;
+  }
+  
 
 
 
@@ -88,18 +104,13 @@ header,
 
 
 
-
-
-
-/* ABOUT ME SECTION */
+/*
+/* ABOUT ME SECTION
+*/
 
 .aboutMeSectionHeader h2 {
-    /* Center */
-    /* Possibly get from bootstrap header element? */
+    padding-top: 2em;
 }
-
-/* Need to center 3 cards */
-/* Centered for 4 */
 
 img{
     height:150px;
@@ -113,6 +124,7 @@ img{
   .card{
     transition:0.5s;
     cursor:pointer;
+    /* border-bottom: none; */
   }
   .card-title{  
     font-size:15px;
@@ -135,7 +147,8 @@ img{
     box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
   }
   .card-text{
-    height:80px;  
+    height:80px;
+    padding: 3px;
   }
   
   .card::before, .card::after {
@@ -159,4 +172,93 @@ img{
   .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
     transform: scale3d(1, 1, 1);
   }
+
+  .card h5 {
+    padding-left: 3px;
+  }
+
+
+
+
+
+  /* Line between sections */
+  hr {
+      border: 1px solid darkgray;
+  }
+
+
+
+
+
+
+/*
+/* PROJECTS SECTION
+*/
+
+.projectsSectionHeader h2 {
+    padding-top: 2em;
+}
+
+.projects a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Line between sections */
+  hr {
+    border: 1px solid darkgray;
+}
+
+
+
+
+
+
+
+
+/*
+/* CONTACT ME SECTION
+*/
+
+.contactMeSectionHeader h2 {
+    padding-top: 2em;
+    padding-bottom: 0em;
+}
+
+.contact {
+    margin-top: -5em;
+}
+
+form {
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+
+
+/*
+/* FOOTER
+*/
+
+.GitHub-Button {
+    padding-top: 0px;
+    padding-bottom: 25px;
+}
+
+.LI-profile-badge {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
 

@@ -1,43 +1,46 @@
 <!doctype html> <!-- Bootstrap says they require this as need HTML5 -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-social.css">
     
-<!-- <body> -->
+</head>
+
+<body>
 
     <!-- Navbar-->
-    <!-- <nav class="navbar navbar-expand-sm navbar-light bg-light"> added sticky-top below-->
-    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
-        <div class="d-flex flex-grow-1">
-          <span class="w-100 d-sm-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-          <!-- <a class="navbar-brand d-none d-sm-inline-block" href="#">  Chris Werling went away with small screen size -->
-          <a class="navbar-brand d-sm-inline-block" href="#">
-              Chris Werling
-          </a>
-          <!-- <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-              <img src="//placehold.it/40?text=LOGO" alt="logo">
-          </a> -->
-          <div class="w-100 text-right">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
+    <!-- <nav class="navbar navbar-expand-sm navbar-light bg-light"> added sticky-top below, then changed to fixed-top-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <div class="d-flex flex-grow-1">
+        <span class="w-100 d-sm-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+        <!-- <a class="navbar-brand d-none d-sm-inline-block" href="#">  Chris Werling went away with small screen size -->
+        <a class="navbar-brand d-sm-inline-block" href="#">
+            Chris Werling
+        </a>
+        <!-- <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+            <img src="//placehold.it/40?text=LOGO" alt="logo">
+        </a> -->
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
       </div>
       <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
           <ul class="navbar-nav ml-auto flex-nowrap">
               <li class="nav-item">
-                  <a href="#" class="nav-link m-2 menu-item nav-active">About Me</a>
+                  <a href="#aboutMeSection" class="nav-link m-2 menu-item nav-active">About Me</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link m-2 menu-item">Projects</a>
+                  <a href="#projects" class="nav-link m-2 menu-item">Projects</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link m-2 menu-item">Contact Chris</a>
+                  <a href="#contact" class="nav-link m-2 menu-item">Contact Chris</a>
               </li>
           </ul>
       </div>
@@ -89,8 +92,13 @@
                 <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Writer</strong></h5>
                 <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Software Developer</strong></h5>
               </div>
-              <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About Me</a>
-              <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Projects</a>
+              <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" href = "#aboutMeSection">About Me</a>
+              <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" href = "#aboutMeSection">Projects</a>
+              <a href = "#aboutMeSection">
+                <div class="chevronDownArrow">
+                    <img src="https://ya-webdesign.com/transparent450_/circle-of-arrows-png.png">
+                </div>
+              </a>
             </div>
             <!--Grid column-->
           </div>
@@ -104,31 +112,14 @@
 
 
 
-  </head>
-
-    
-  <!-- </header> -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <body>
-
 
     <!-- About Me Content -->
 
 
-    <div class="aboutMeSectionHeader">
-      <!-- Place About Me Header here -->
-      <h2>About Me</h2>
+    <div class="aboutMeSectionHeader" id="aboutMeSection">
+      <div class="col-md-12 mb-4 black-text text-center">
+        <h2>About Me</h2>
+      </div>
     </div>
 
     <!-- Cards themselves mainly from Nihar Bheemanathi https://colorlib.com/wp/bootstrap-cards/ & https://codepen.io/nbheemanathi/pen/rwQZVQ -->
@@ -139,67 +130,110 @@
           <p class="card-text">Welcom to bootstrap card styles</p>
           <a href="#" class="btn btn-primary">Submit</a>
         </div>   -->
+        <!-- <div class="row"> -->
         <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="card card-block">
-            <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
-          <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+          <!-- <div class="col-md-3 col-sm-6"> col-md-3 is 25%, whereas col-md-4 is 33%, filling 1/3 of the space, which is what I want in this section, but in the projects section, I'll want 4 cards in each row. -->
+          <div class="col-md-4 col-sm-6">
+            <!-- <div class="card card-block"> -->
+            <div class="card">
+              <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
+              <img src="https://source.unsplash.com/QBpZGqEMsKg.jpg" alt="Photo of sunset">
               <h5 class="card-title mt-3 mb-3">Entrepreneur</h5>
-              <p class="card-text">Founded 3 Businesses & Non-Profit -<br>Cybersecurity, Supply Chain, Mgmt Consulting</p>
-        </div>
+              <p class="card-text">Founded & Sold Businesses & a Non-Profit -<br>Tech & Consulting</p>
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-4 col-sm-6">
             <div class="card card-block">
-            <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
-          <img src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset">
+              <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
+              <img src="https://source.unsplash.com/zFBVxClB2I8.jpg" alt="Photo of sunset">
               <h5 class="card-title  mt-3 mb-3">Speaker/Writer</h5>
-              <p class="card-text">Wide Variety of Topics</p> 
-        </div>
+              <p class="card-text">Cybersecurity, Software Dev, Supply Chain, Economy, & Others</p> 
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-4 col-sm-6">
             <div class="card card-block">
-            <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
-          <img src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg" alt="Photo of sunset">
+              <!-- <h4 class="card-title text-right"><i class="material-icons">settings</i></h4> -->
+              <img src="https://source.unsplash.com/70Rir5vB96U.jpg" alt="Photo of sunset">
               <h5 class="card-title  mt-3 mb-3">Software Developer</h5>
-              <p class="card-text">Modern-Day Web Apps</p> 
-        </div>
+              <p class="card-text">From Modern-Day Web Apps to the AS/400!</p> 
+            </div>
           </div>
         </div>
-        
-      </div>
-      
+    </div>
+     
+
+
+    <!-- Horizontal Line between sections -->
+    <hr>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-    <!-- Old ABout Me Content Section Holder -->
-    <!-- <div class="row">
-        <div class="col-md-12 col-lg-4">
-            <p>Column 1</p>
-        </div>
-        <div class="col-md-12 col-lg-4">
-            <p>Column2</p>
-        </div>
-        <div class="col-md-12 col-lg-4">
-            <p>Column 3</p>
-        </div>
-    </div> -->
 
 
 
 
     <!-- Web App Software Developoment Projects -->
+
+    <div class="projects" id="projects">
+
+      <div class="projectsSectionHeader">
+        <div class="col-md-12 mb-4 black-text text-center">
+          <h2>Projects</h2>
+        </div>
+      </div>
+
+      <!-- Cards themselves mainly from Nihar Bheemanathi https://colorlib.com/wp/bootstrap-cards/ & https://codepen.io/nbheemanathi/pen/rwQZVQ -->
+
+      <div class="container mt-2">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <a href="https://cewerling.github.io/StaticLayout/index.html" target="_blank">
+                <div class="card">
+                  <img src="https://djxrfg.bn.files.1drv.com/y4mv6jz_R7wIuq-GzebHeYY6fK46SoAIsnjZvgzh4COP69TfHg_ugAhU7M5fU02XUaxwna4FGY_-FVSc_TPwVf-i6Pio3hcxruiQ8zU2yCNh_fE5PrCdos9LxdN6Avu1fzro0nm88oxpND_-awI-TDbadAPK0Golpg61a8frUoIAf6qjHKHVXpfLBY2IzXHumTDncCP6mm-73o3e0eFE_drPg?width=1167&height=833&cropmode=none">
+                  <h5 class="card-title mt-3 mb-3">Static Web Page</h5>
+                  <p class="card-text">Mimic Eleven Fifty's Landing Page with no Templates or Tools</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a href="https://codepen.io/cwerling/pen/MWwGzGV?editors=1100" target="_blank">
+                <div class="card">
+                  <img src="https://csaq3a.bn.files.1drv.com/y4mzRzjISrZ_Zk6AyJhJPihS8Vfin9uCySONyqWWhUW5a0V_-QCiSTAAHGTe4DchKpQejeuQaVISaDBte8QWJQhuycVNSo6ZKPe2vykc0l-z6HLvENg1xDo5iaCDYaYN-nRJQb1OjgAz49tyuy5YeUak6a7OM80zu23LafS16_V6rjpZt4_Dm6aEJ19k_llENrtq-M9Mnao47OnzGy2bIv-Tw?width=451&height=436&cropmode=none">
+                  <h5 class="card-title mt-3 mb-3">CSS Creature</h5>
+                  <p class="card-text">Create a Creature using CSS Code</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a href="https://cewerling.github.io/APIChallenge/index.html" target="_blank">
+                <div class="card">
+                  <img src="https://qn4gxa.bn.files.1drv.com/y4md6I7aKkUZCnXBkx1QbQhRIB7PRbEfhPljw1QkWu8xZVxf3kLnZJE4Dixl0_xW6k7V5jgdZFvaUHSBHIxfD1tljv750umNx5avlVhNKfKd4P0iH_xpqw4Vh8qySY3eNHCHzQWMPwyDwM-wlupagR-qrK39Hn1_asl8dbFVtMstjNaL_9U_v_7bMp3wfZxCclNhosAszfOCkqVYxaHSX5Y7Q?width=1239&height=787&cropmode=none">
+                  <h5 class="card-title mt-3 mb-3">API Challenge</h5>
+                  <p class="card-text">Build an API to Studio Ghibli to retrieve movies from their portfolio</p>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+     
+    </div> <!-- Projects Section -->
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Horizontal Line between sections -->
+    <hr>
+
+
 
 
 
@@ -207,7 +241,14 @@
 
     <!-- Contact Me -->
 
-    <form
+    <div class="contactMeSectionHeader" id="contact">
+      <div class="col-md-12 mb-4 black-text text-center">
+        <h2>Contact Me</h2>
+      </div>
+    </div>
+
+    <!-- OLD FORM -->
+    <!-- <form
         action="https://formspree.io/mlelzzey"
         method="POST"
         >
@@ -224,22 +265,104 @@
             <textarea name="message"></textarea>
         </label>
         <input type="submit" value="Send">
-    </form>
+    </form> -->
+
+
+    <!-- ORIGINAL CODE FROM: https://codepen.io/adammacias/pen/qdVMwp -->
+    <div class="contact">
+      <div class="row">
+        <div class="col-lg-6">
+          <form role="form" action="http://formspree.io/mlelzzey" method="POST">
+            <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" />
+            <input type="hidden" name="_subject" value="New submission!" />
+            <input type="text" name="_gotcha" style="display:none" /> -->
+  
+            <div class="form-group">
+              <label for="InputName">Your Name</label>
+              <input type="text" class="form-control" name="name" id="InputName" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+              <label for="InputEmail">Your Email</label>
+  
+              <input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+              <label for="InputMessage">Message</label>
+  
+              <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+              <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right"> 
+        </form>
+      </div>
+      <hr class="hidden-lg">
+      <div class="col-lg-5 col-md-offset-1">
+        <address>
+          <!-- <h3>Office Location</h3> -->
+          <p class="lead"><a href="https://www.google.com/maps/place/Indianapolis,+IN/@39.7796999,-86.2731767,11z/data=!3m1!4b1!4m5!3m4!1s0x886b50ffa7796a03:0xd68e9df640b9ea7c!8m2!3d39.768403!4d-86.158068" target="_blank">Indianapolis, IN</a><br>
+          Phone: 317-218-7716</p>
+        </address>
+        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="cwerling"><a class="LI-simple-link" href="https://www.linkedin.com/in/cwerling" target="_blank">Chris Werling</a></div>
+        <div class="GitHub-Button">
+          <a class="github-button" href="https://github.com/cewerling" target="_blank" data-size="large" aria-label="Follow @cewerling on GitHub">Follow @cewerling</a>
+        </div>
+        <a href="https://twitter.com/ChrisWerling?ref_src=twsrc%5Etfw" target="_blank" class="twitter-follow-button" data-show-count="false">Follow @ChrisWerling</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- <a class="btn btn-social-icon btn-twitter">
+    <span class="fa fa-twitter"></span>
+  </a> -->
+
+
+
+
+
+
+
 
 
 
 
     <!-- Footer -->
     
+    <footer>
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">©
+        <a href="https://ChrisWerling.com" target="_blank"> Chris Werling</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+
+    <!-- Footer -->
 
 
 
+
+
+
+
+
+
+
+
+
+  <!-- SCRIPTS -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script src="main.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
