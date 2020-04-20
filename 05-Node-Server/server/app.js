@@ -5,6 +5,7 @@ var app = express();
 var test = require('./controllers/testcontroller');
 var authTest = require('./controllers/authtestcontroller');
 var user = require('./controllers/usercontroller');
+var userInfo = require('./controllers/userinfocontroller');
 var sequelize = require('./db');
 
 sequelize.sync();  // tip: pass in {force: true} for resetting tables
@@ -24,6 +25,7 @@ app.use('/api/user', user);
  *********************/
 app.use(require('./middleware/validate-session'));
 app.use('/authtest', authTest);
+app.use('/userinfo', userInfo);
 
 app.listen(3000, function() {
     console.log('App is listening on 3000.');
